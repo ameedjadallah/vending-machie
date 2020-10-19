@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.vending-machine-app {
+  display: flex;
+  padding: 1em;
+  background: #f8f8f8;
+}
+.machine-products {
+  width: 70%;
+  padding: 1em;
+  .row-items {
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+  }
+  .product-item {
+    text-align: center;
+    width: 20%;
+    padding: 0.5em;
+    .item-info {
+    }
+    .product-image {
+      height: 80px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .product-code {
+      text-align: center;
+      font-weight: bold;
+      padding: 1em 0 0;
+    }
+  }
+}
+.selection-panel {
+  width: 30%;
+  padding: 1em;
+  font-family: "Roboto Mono", monospace;
+
+  .panel-screen {
+    min-height: 200px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 1em;
+    background: rgb(43, 43, 43);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .success-message {
+        color : green;
+    }
+    h5 {
+        margin : 1em 0 0.5em;
+    }
+    .warning-message {
+        color : orange;
+    }
+  }
+
+  .input-field {
+    font-family: "Roboto Mono", monospace;
+    width: 100%;
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    margin-top: 1em;
+    padding: 0.7em;
+    font-size: 16px;
+  }
+
+  .input-group {
+    display: flex;
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    .select {
+      width: 40%;
+      margin-left: 1em;
+    }
+  }
+  .make-order {
+    width: 100%;
+    border: none;
+    background: #ea4c89;
+    color: #fff;
+    padding: 0.7em;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top : 1em;
+    cursor: pointer;
+    opacity: 0.9;
+
+    &:hover, &:focus {
+        opacity: 1;
+    }
+  }
+}
